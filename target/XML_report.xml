@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="21.36" tests="6" skipped="0" failures="0" errors="0">
+<testcase classname="AddProduct" name="user add product to cart" time="6.009">
+<system-out><![CDATA[
+Given user login with standard user.........................................passed
+When user in product page...................................................passed
+And user click button add to cart...........................................passed
+And user click icon cart....................................................passed
+Then displays product descriptions..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="AddProduct" name="remove product in cart using error user" time="3.215">
+<system-out><![CDATA[
+Given user login with error user............................................passed
+When user in product page...................................................passed
+And user click button add to cart...........................................passed
+And user click remove button in product page................................passed
+Then the remove button cant click...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Checkout" name="Checkout Product" time="3.498">
+<system-out><![CDATA[
+Given user login with standard user.........................................passed
+When user click button add to cart..........................................passed
+And user click icon cart....................................................passed
+And user click checkout button..............................................passed
+Then user completes information data........................................passed
+And user click continue button..............................................passed
+And display checkout information............................................passed
+And click finish button.....................................................passed
+Then display popup success..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Detail Product" name="Display detail product with click image product" time="2.832">
+<system-out><![CDATA[
+Given user login with standard user.........................................passed
+When user in product page...................................................passed
+And user click image product................................................passed
+Then display product information............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="user login with standart user" time="2.578">
+<system-out><![CDATA[
+Given user already open login page..........................................passed
+When user input username....................................................passed
+And user input password.....................................................passed
+And user click login button.................................................passed
+Then user redirect to dashboard.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="user login with invalid username" time="2.772">
+<system-out><![CDATA[
+Given user already open login page..........................................passed
+When user input invalid username............................................passed
+And user input password.....................................................passed
+And user click login button.................................................passed
+Then error message invalid username.........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
